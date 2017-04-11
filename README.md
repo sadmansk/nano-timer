@@ -2,7 +2,11 @@ Nano timer
 ==========
 
 C++ static utility for nanosecond precision time
-------------------------------------------------
+
+### Requirements:
+
+These files will work under any compiler that supports at the minimum *C++11*. Make sure to use
+the correct compiler for your platform of choice for running the provided `example.cpp`.
 
 ### Usage:
 
