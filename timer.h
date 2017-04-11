@@ -1,3 +1,6 @@
+#ifndef TIMER_H_
+#define TIMER_H_
+
 #include <ctime>
 #include <chrono>
 
@@ -5,11 +8,11 @@
 
 typedef std::chrono::high_resolution_clock clock_;
 
-class Time
+class Timer
 {
 public:
   //ctor that is probably never gonna be used
-	inline Time() {}
+	inline Timer() {}
 
   //resets the starting time to the current time
 	inline static void reset() { start = clock_::now(); }
@@ -19,8 +22,10 @@ public:
 		return std::chrono::duration_cast<std::chrono::nanoseconds>(clock_::now() - start).count();
 	}
 
-	inline virtual ~Time() {}
+	inline virtual ~Timer() {}
 
 private:
 	static std::chrono::time_point<clock_> start; //variable to store the starting time
 };
+
+#endif // TIMER_H_
