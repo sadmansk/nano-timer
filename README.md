@@ -24,5 +24,4 @@ g++ -o example example.cpp timer.h timer.cpp
 ```
 
 ### License:
-
-MIT.
+See [LICENSE](LICENSE) for more details.
