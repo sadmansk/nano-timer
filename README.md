@@ -1,5 +1,4 @@
-Nano timer
-==========
+# Nano timer [![build status](https://git.sadmansk.com/sadmansk/nano-timer/badges/master/build.svg)](https://git.sadmansk.com/sadmansk/nano-timer/commits/master)
 
 C++ static utility for nanosecond precision time
 

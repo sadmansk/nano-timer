@@ -1,0 +1,9 @@
+before_script:
+    - g++ --version
+
+build:
+    stage: test
+    script:
+        - g++ -std=c++11 -o example example.cpp timer.h timer.cpp
+        - ./example
+
